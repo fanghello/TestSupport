@@ -1,0 +1,9 @@
+testtracker:
+  base_url: "http://nztesttracker:8080"
+  revision: ""
+
+results:
+  dir: "results"
+  write_raw_response: true
+  write_summary_json: true
+  write_summary_text: true

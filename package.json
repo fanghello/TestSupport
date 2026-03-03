@@ -1,0 +1,19 @@
+{
+  "name": "testsupport-testtracker-summary",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:summary": "playwright test tests/testtracker-batch-results.spec.js",
+    "test:team-drilldown": "playwright test tests/testtracker-team-results-checking.spec.js",
+    "test:team-results-checking": "playwright test tests/testtracker-team-results-checking.spec.js",
+    "show-report": "playwright show-report results/playwright-report"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.0"
+  }
+}
