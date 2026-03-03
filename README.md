@@ -24,6 +24,28 @@ npx playwright install
 npm run test:summary
 ```
 
+3. Run Playwright
+
+```powershell
+npm test
+```
+
+Open the last HTML report:
+
+```powershell
+npm run show-report
+```
+
+## JSON file compare
+
+Run a test that compares two JSON files and fails with the first difference path.
+
+```powershell
+$env:JSON_LEFT_PATH = "left\\file-a.json"
+$env:JSON_RIGHT_PATH = "right\\file-b.json"
+npm run test:json-compare
+```
+
 ## Configuration
 
 - `config/app.yaml`
